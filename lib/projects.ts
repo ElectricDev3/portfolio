@@ -108,12 +108,12 @@ export const PROJECTS: Project[] = [
     codename: "TAProject",
     portfolioId: "TA2Prf",
     name: "Lexmind",
-    tagline: "Herramienta de IA para procesamiento de texto",
+    tagline: "Herramienta de análisis y procesamiento de texto",
     problem:
-      "Procesar texto con IA suele significar volver a interpretar una respuesta en prosa libre.",
+      "Contar, medir, buscar/reemplazar y formatear texto suele implicar copiar y pegar entre varias herramientas sueltas.",
     solution:
-      "Cuatro modos (resumen, corrección, tono, sentimiento) con salidas estructuradas garantizadas vía JSON Schema sobre la API de Claude.",
-    stack: ["Next.js", "TypeScript", "Tailwind", "Claude API"],
+      "Estadísticas, frecuencia de palabras, buscar y reemplazar, y transformaciones de formato — todo calculado con lógica local en el navegador, sin backend ni claves de API.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
     screenshot: "/screenshots/ta-lexmind.png",
     accent: "#14B8A6",
   },
