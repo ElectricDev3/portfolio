@@ -1,23 +1,22 @@
-# Portafolio (PRProject)
+# Portafolio — ElectricDev
 
-Sitio de portafolio técnico. Presenta a Thorvane (SCProject) como proyecto principal y los 8 micro-SaaS del portafolio (QIProject…TAProject), cada uno con su nombre técnico, su producto, el problema que resuelve, el stack usado, y capturas reales de la app corriendo.
+Sitio de portafolio técnico. Presenta a **Thorvane** como proyecto principal y 8 micro-SaaS adicionales, cada uno con su nombre de producto, el problema que resuelve, la solución, el stack usado, y capturas reales de la app corriendo.
 
-> Identificador técnico: `PRProject` (sin identificador de portafolio propio — este es el sitio del portafolio, no un producto dentro de él).
+> **Nota de confidencialidad:** cada proyecto del portafolio tiene un identificador técnico interno de SCStudios (carpeta/repo de desarrollo). Esos identificadores son confidenciales y **nunca se muestran en la interfaz pública** — ni en tarjetas, títulos, navegación, metadata visible ni en este README. Solo se usan internamente en `lib/projects.ts` como datos de trabajo (comentados como tal) para uso futuro del equipo, no para mostrarse.
 
 ## Concepto de diseño
 
-El hilo conductor visual es el mismo patrón que organiza todo el portafolio: **codename → producto**. Cada proyecto nace con un nombre técnico corto (`QIProject`) y termina siendo un producto con identidad propia (`Quorel`). El sitio lo hace explícito en todas partes — en la navegación, en el panel de "build log" del hero, y en cada tarjeta de proyecto.
-
+- **Identidad:** ElectricDev — nombre en la navegación, el hero y la metadata del sitio.
 - **Paleta:** grafito oscuro (`#0b0e11`) con un solo acento ámbar tipo "terminal fósforo" (`#ffb454`), inspirado en monitores de ingeniería retro. Un fondo de grilla sutil refuerza el concepto de "documento técnico" en vez de "landing de marketing".
-- **Tipografía:** IBM Plex Sans para títulos y cuerpo, IBM Plex Mono para etiquetas, codenames y datos técnicos — una familia diseñada originalmente para documentación de ingeniería de IBM, coherente con el concepto.
-- **Firma visual:** el panel `build-log.sh` del hero — una lista real de los 8 proyectos con estado "OK", animada como una secuencia de arranque al cargar la página.
+- **Tipografía:** IBM Plex Sans para títulos y cuerpo, IBM Plex Mono para etiquetas y datos técnicos — una familia diseñada originalmente para documentación de ingeniería de IBM.
+- **Firma visual:** el panel `build-log.sh` del hero — una lista de los productos con estado "OK", animada como una secuencia de arranque al cargar la página.
 - **Contenido real:** todas las capturas de pantalla son screenshots reales de cada aplicación corriendo (capturadas con Playwright durante el desarrollo de cada proyecto), no mockups.
 
 ## Secciones
 
-1. **Hero** — nombre del portafolio, tesis de una línea, CTA, panel de estado tipo terminal.
-2. **Sobre mí** — quién soy / qué construyo / áreas de interés.
-3. **Proyecto principal** — Thorvane (SCProject), con descripción real tomada de su documentación de visión, stack real, y link a su repositorio.
+1. **Hero** — identidad (ElectricDev), tesis de una línea, CTA, panel de estado tipo terminal.
+2. **Sobre mí** — quién soy / cómo trabajo / en qué estoy ahora.
+3. **Proyecto principal** — Thorvane, con descripción real tomada de su documentación de visión y stack real.
 4. **Proyectos** — grid de los 8 micro-SaaS: nombre, problema, solución, stack, captura real, Live Demo y GitHub.
 5. **Skills** — Frontend, Backend, Database, AI, Infraestructura/Tools.
 6. **Contacto** — email, GitHub, LinkedIn.
@@ -42,6 +41,7 @@ components/
   icons.tsx                        Íconos de GitHub/LinkedIn (SVG propio)
 lib/
   projects.ts            Datos de los 8 proyectos + del proyecto destacado
+                          (incluye identificadores técnicos internos, no expuestos en la UI)
 public/screenshots/      Capturas reales de cada proyecto
 ```
 
@@ -65,12 +65,9 @@ Ninguna. Sitio estático, sin APIs ni claves.
 
 ## Pendientes antes de publicar
 
-Este sitio está listo técnicamente, pero tiene contenido marcado explícitamente como placeholder que debes reemplazar antes de compartirlo:
-
-- **`components/About.tsx`** — el bloque "01 · quién soy" tiene `[Tu nombre]` como placeholder.
 - **`components/Contact.tsx`** — email, GitHub y LinkedIn están entre corchetes (`[tu-email@ejemplo.com]`, etc.) como placeholder.
 - **`lib/projects.ts`** — cada proyecto tiene `demoUrl` y `githubUrl` sin definir (por eso las tarjetas muestran "Live Demo"/"GitHub" atenuados). A medida que subas cada repo a GitHub y lo despliegues en Vercel, agrega esas URLs aquí — las tarjetas se activan automáticamente.
-- **Thorvane** ya tiene su GitHub real enlazado (`github.com/SCstudio-df/scproject`); no tiene demo pública configurada.
+- **Thorvane** — `FEATURED.githubUrl` está sin definir a propósito: el repositorio interno de desarrollo no debe enlazarse públicamente. Complétalo con el repositorio público real de Thorvane cuando exista.
 
 ## Despliegue
 

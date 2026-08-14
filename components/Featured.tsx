@@ -12,14 +12,11 @@ export function Featured() {
           aria-hidden
           className="pointer-events-none absolute -right-10 -top-10 select-none font-mono text-[220px] font-bold leading-none text-[var(--border)] opacity-40"
         >
-          SC
+          TH
         </span>
 
         <div className="relative max-w-2xl">
-          <span className="font-mono-label rounded-full border border-[var(--border)] px-2.5 py-1 text-[11px] uppercase text-[var(--text-secondary)]">
-            {FEATURED.codename}
-          </span>
-          <h3 className="mt-4 text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-4xl">
+          <h3 className="text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-4xl">
             {FEATURED.name}
           </h3>
           <p className="mt-1 text-sm text-[var(--accent)]">{FEATURED.tagline}</p>
@@ -38,16 +35,26 @@ export function Featured() {
             ))}
           </div>
 
-          <a
-            href={FEATURED.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-7 inline-flex items-center gap-2 rounded-md border border-[var(--border)] px-4 py-2.5 text-sm font-medium text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
-          >
-            <GitHubIcon size={15} />
-            Ver repositorio
-            <ArrowUpRight size={13} />
-          </a>
+          {FEATURED.githubUrl ? (
+            <a
+              href={FEATURED.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-7 inline-flex items-center gap-2 rounded-md border border-[var(--border)] px-4 py-2.5 text-sm font-medium text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            >
+              <GitHubIcon size={15} />
+              Ver repositorio
+              <ArrowUpRight size={13} />
+            </a>
+          ) : (
+            <span
+              className="mt-7 inline-flex items-center gap-2 rounded-md border border-[var(--border)] px-4 py-2.5 text-sm font-medium text-[var(--text-muted)]"
+              title="Repositorio público próximamente"
+            >
+              <GitHubIcon size={15} />
+              Repositorio próximamente
+            </span>
+          )}
         </div>
       </div>
     </section>

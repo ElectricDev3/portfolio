@@ -15,9 +15,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portafolio — Desarrollador Full-Stack",
+  title: "ElectricDev — Desarrollador Full-Stack",
   description:
-    "Portafolio técnico: 8 micro-SaaS construidos de punta a punta con Next.js, TypeScript y APIs reales.",
+    "Portafolio de ElectricDev: 8 micro-SaaS construidos de punta a punta con Next.js, TypeScript y APIs reales.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

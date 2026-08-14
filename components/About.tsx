@@ -1,15 +1,15 @@
 const BLOCKS = [
   {
     label: "01 · quién soy",
-    body: "[Tu nombre] — desarrollador full-stack. Reemplaza este bloque con una o dos frases reales sobre ti: tu trayectoria, tu enfoque de trabajo, o qué te trajo a construir software.",
+    body: "Soy ElectricDev, desarrollador enfocado en crear productos digitales y convertir ideas en software funcional.",
   },
   {
-    label: "02 · qué construyo",
-    body: "Productos completos, no solo interfaces: desde el modelo de datos y la lógica de negocio hasta una UI pulida y lista para producción. Este portafolio es la muestra — ocho micro-SaaS, cada uno con un problema real, una solución concreta y un stack elegido a propósito.",
+    label: "02 · cómo trabajo",
+    body: "No me interesa únicamente programar por programar; me gusta entender el problema, diseñar una solución y construirla de principio a fin.",
   },
   {
-    label: "03 · áreas de interés",
-    body: "Herramientas con IA integrada de forma útil (no decorativa), arquitectura limpia que envejece bien, y experiencia de desarrollador — el tipo de detalle que hace que un proyecto sea agradable de mantener, no solo de lanzar.",
+    label: "03 · en qué estoy ahora",
+    body: "Me interesa especialmente la inteligencia artificial, el desarrollo web y la creación de herramientas que resuelvan problemas reales. Actualmente trabajo en proyectos propios, experimentando con SaaS, IA y productos digitales mientras sigo desarrollando mis habilidades.",
   },
 ];
 

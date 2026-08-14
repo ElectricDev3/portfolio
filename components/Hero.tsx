@@ -7,7 +7,7 @@ export function Hero() {
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
         <div>
           <p className="font-mono-label text-xs uppercase text-[var(--accent)]">
-            Build log / Portafolio
+            ElectricDev · Build log
           </p>
           <h1 className="mt-4 text-4xl font-semibold leading-[1.1] tracking-tight text-[var(--text-primary)] sm:text-5xl">
             Construyo productos reales,
@@ -15,9 +15,9 @@ export function Hero() {
             de la idea al deploy.
           </h1>
           <p className="mt-5 max-w-md text-[15px] leading-relaxed text-[var(--text-secondary)]">
-            Desarrollador full-stack. Cada proyecto de este portafolio nace con un nombre técnico
-            interno — su codename — y termina como un producto funcional, con su propia interfaz,
-            su propia API y, cuando aplica, su propia integración externa real.
+            Desarrollador full-stack. Cada proyecto de este portafolio nace de un problema real y
+            termina como un producto funcional, con su propia interfaz, su propia API y, cuando
+            aplica, su propia integración externa real.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a

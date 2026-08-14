@@ -20,18 +20,14 @@ export function StatusPanel() {
         <div className="mt-3 space-y-1">
           {PROJECTS.map((project, i) => (
             <div
-              key={project.codename}
+              key={project.name}
               className="flex items-center justify-between opacity-0"
               style={{
                 animation: "fade-in-up 0.4s ease-out forwards",
                 animationDelay: `${0.25 + i * 0.08}s`,
               }}
             >
-              <span className="text-[var(--text-secondary)]">
-                {project.codename}
-                <span className="text-[var(--text-muted)]"> → </span>
-                <span className="text-[var(--text-primary)]">{project.name}</span>
-              </span>
+              <span className="text-[var(--text-primary)]">{project.name}</span>
               <span className="text-[var(--accent)]">OK</span>
             </div>
           ))}

@@ -12,13 +12,13 @@ export function Projects() {
         Ocho micro-SaaS, ocho habilidades distintas
       </h2>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
-        Cada proyecto tiene un nombre técnico corto — su codename — y un producto con identidad
-        propia. El código es lo que importa; el nombre comercial es lo que ves.
+        Cada uno resuelve un problema real, con un stack elegido a propósito y una interfaz pensada
+        para usarse, no solo para mostrarse.
       </p>
 
       <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
-          <ProjectCard key={project.codename} project={project} />
+          <ProjectCard key={project.name} project={project} />
         ))}
       </div>
     </section>

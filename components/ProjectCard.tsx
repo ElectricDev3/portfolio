@@ -22,12 +22,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <div className="flex items-center gap-2 font-mono-label text-[11px] uppercase text-[var(--text-muted)]">
-          <span>{project.codename}</span>
-          <span className="text-[var(--accent)]">→</span>
-          <span className="text-[var(--text-secondary)]">{project.portfolioId}</span>
-        </div>
-        <h3 className="mt-2 text-lg font-semibold text-[var(--text-primary)]">{project.name}</h3>
+        <h3 className="text-lg font-semibold text-[var(--text-primary)]">{project.name}</h3>
         <p className="mt-0.5 text-sm text-[var(--accent)]">{project.tagline}</p>
 
         <div className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--text-secondary)]">
