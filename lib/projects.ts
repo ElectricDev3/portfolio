@@ -24,6 +24,8 @@ export const PROJECTS: Project[] = [
       "Documentos con líneas de conceptos, subtotal/descuento/impuesto calculados en vivo, vista previa profesional y exportación a PDF real.",
     stack: ["Next.js", "TypeScript", "Tailwind", "@react-pdf/renderer"],
     screenshot: "/screenshots/qi-quorel.png",
+    demoUrl: "https://quorel-phi.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/quorel",
     accent: "#6366F1",
   },
   {
@@ -37,6 +39,8 @@ export const PROJECTS: Project[] = [
       "Catálogo con ajuste rápido de cantidades, estados automáticos de stock y un dashboard con valor de inventario y alertas.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     screenshot: "/screenshots/im-stashline.png",
+    demoUrl: "https://stashline.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/stashline",
     accent: "#F59E0B",
   },
   {
@@ -50,6 +54,8 @@ export const PROJECTS: Project[] = [
       "Un tablero kanban por proyecto con arrastrar y soltar nativo, prioridades, fechas límite y progreso visible.",
     stack: ["Next.js", "TypeScript", "Tailwind", "HTML5 Drag & Drop"],
     screenshot: "/screenshots/tm-fluxboard.png",
+    demoUrl: "https://fluxboard-eight.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/fluxboard",
     accent: "#10B981",
   },
   {
@@ -63,6 +69,8 @@ export const PROJECTS: Project[] = [
       "Un gestor de enlaces independiente con categorías, favoritos y búsqueda, con el ícono real de cada sitio.",
     stack: ["Next.js", "TypeScript", "Tailwind", "next/image"],
     screenshot: "/screenshots/bm-marqly.png",
+    demoUrl: "https://marqly-brown.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/marqly",
     accent: "#8B5CF6",
   },
   {
@@ -76,6 +84,8 @@ export const PROJECTS: Project[] = [
       "Editor de 7 tipos de campo, vista previa funcional con validación, y una tabla de respuestas recibidas.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     screenshot: "/screenshots/fb-formora.png",
+    demoUrl: "https://formora-flax.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/formora",
     accent: "#06B6D4",
   },
   {
@@ -89,6 +99,8 @@ export const PROJECTS: Project[] = [
       "Gráficas de línea y barra en SVG puro (sin librerías de charting), con crosshair, tooltips y paleta validada por accesibilidad de color.",
     stack: ["Next.js", "TypeScript", "Tailwind", "SVG a mano"],
     screenshot: "/screenshots/md-metrixa.png",
+    demoUrl: "https://metrixa-beta.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/metrixa",
     accent: "#EC4899",
   },
   {
@@ -102,6 +114,8 @@ export const PROJECTS: Project[] = [
       "Búsqueda en vivo contra la iTunes Search API vía un proxy propio, con filtros y comparación lado a lado de hasta 3 apps.",
     stack: ["Next.js", "TypeScript", "Tailwind", "Route Handlers", "iTunes Search API"],
     screenshot: "/screenshots/me-scoutlens.png",
+    demoUrl: "https://scoutlens-mocha.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/scoutlens",
     accent: "#F97316",
   },
   {
@@ -115,6 +129,8 @@ export const PROJECTS: Project[] = [
       "Estadísticas, frecuencia de palabras, buscar y reemplazar, y transformaciones de formato — todo calculado con lógica local en el navegador, sin backend ni claves de API.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     screenshot: "/screenshots/ta-lexmind.png",
+    demoUrl: "https://lexmind-nu.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/lexmind",
     accent: "#14B8A6",
   },
 ];
@@ -128,7 +144,7 @@ export const FEATURED = {
     "Thorvane ayuda a emprendedores a convertir una idea en un proyecto estructurado junto a Andrew, un socio estratégico de IA que investiga mercado, competencia y riesgos antes de que el usuario invierta tiempo o dinero en algo sin validar. No es un chat genérico: tiene un método fijo y repetible, memoria por proyecto, y una personalidad que cuestiona en vez de solo responder.",
   stack: ["Next.js 16", "TypeScript", "Tailwind", "Supabase", "Claude API", "Voyage AI"],
   screenshot: "/screenshots/sc-thorvane.png",
-  // TODO: reemplazar con el repositorio público real de Thorvane cuando exista
-  // (NO usar el repo interno de SCProject).
-  githubUrl: undefined as string | undefined,
+  // Repositorio público de exhibición (copia recortada y rebrandeada del
+  // código real, sin docs internos) — NO es el repo interno de SCProject.
+  githubUrl: "https://github.com/ElectricDev3/thorvane" as string | undefined,
 };
