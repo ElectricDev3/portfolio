@@ -2,7 +2,7 @@ const LINKS = [
   { href: "#proyectos", label: "Proyectos" },
   { href: "#destacado", label: "Destacado" },
   { href: "#skills", label: "Skills" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "#contacto", label: "Instagram" },
 ];
 
 export function Nav() {
@@ -24,10 +24,12 @@ export function Nav() {
           ))}
         </nav>
         <a
-          href="#contacto"
+          href="https://instagram.com/wili_desantiago"
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-md border border-[var(--border)] px-3 py-1.5 font-mono-label text-xs uppercase text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
         >
-          Contactar
+          Instagram
         </a>
       </div>
     </header>

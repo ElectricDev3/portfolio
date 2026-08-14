@@ -27,10 +27,12 @@ export function Hero() {
               Ver proyectos <ArrowRight size={15} />
             </a>
             <a
-              href="#contacto"
+              href="https://instagram.com/wili_desantiago"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] px-4 py-2.5 text-sm font-medium text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
             >
-              Contacto
+              Instagram
             </a>
           </div>
         </div>

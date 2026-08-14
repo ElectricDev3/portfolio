@@ -19,7 +19,7 @@ Sitio de portafolio técnico. Presenta a **Thorvane** como proyecto principal y 
 3. **Proyecto principal** — Thorvane, con descripción real tomada de su documentación de visión y stack real.
 4. **Proyectos** — grid de los 8 micro-SaaS: nombre, problema, solución, stack, captura real, Live Demo y GitHub.
 5. **Skills** — Frontend, Backend, Database, AI, Infraestructura/Tools.
-6. **Contacto** — email, GitHub, LinkedIn.
+6. **Instagram** — único canal de contacto/seguimiento (`@wili_desantiago`). Es un portafolio para mostrar trabajo, no una página de "contrátame".
 
 ## Stack
 
@@ -38,7 +38,7 @@ components/
   Featured.tsx                    Proyecto principal (Thorvane)
   Projects.tsx, ProjectCard.tsx    Grid de los 8 proyectos
   Skills.tsx, Contact.tsx, Footer.tsx
-  icons.tsx                        Íconos de GitHub/LinkedIn (SVG propio)
+  icons.tsx                        Íconos de GitHub/LinkedIn/Instagram (SVG propio)
 lib/
   projects.ts            Datos de los 8 proyectos + del proyecto destacado
                           (incluye identificadores técnicos internos, no expuestos en la UI)
@@ -65,7 +65,6 @@ Ninguna. Sitio estático, sin APIs ni claves.
 
 ## Pendientes antes de publicar
 
-- **`components/Contact.tsx`** — email, GitHub y LinkedIn están entre corchetes (`[tu-email@ejemplo.com]`, etc.) como placeholder.
 - **`lib/projects.ts`** — cada proyecto tiene `demoUrl` y `githubUrl` sin definir (por eso las tarjetas muestran "Live Demo"/"GitHub" atenuados). A medida que subas cada repo a GitHub y lo despliegues en Vercel, agrega esas URLs aquí — las tarjetas se activan automáticamente.
 - **Thorvane** — `FEATURED.githubUrl` está sin definir a propósito: el repositorio interno de desarrollo no debe enlazarse públicamente. Complétalo con el repositorio público real de Thorvane cuando exista.
 
