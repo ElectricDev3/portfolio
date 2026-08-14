@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { FEATURED } from "@/lib/projects";
 import { GitHubIcon } from "./icons";
@@ -55,6 +56,18 @@ export function Featured() {
               Repositorio próximamente
             </span>
           )}
+        </div>
+
+        <div className="relative mt-10 overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--bg-elevated)]">
+          <div className="relative aspect-[16/9] w-full">
+            <Image
+              src={FEATURED.screenshot}
+              alt={`Captura de ${FEATURED.name}`}
+              fill
+              sizes="(min-width: 1024px) 1000px, 100vw"
+              className="object-cover object-top"
+            />
+          </div>
         </div>
       </div>
     </section>

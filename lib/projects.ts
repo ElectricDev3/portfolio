@@ -127,6 +127,7 @@ export const FEATURED = {
   description:
     "Thorvane ayuda a emprendedores a convertir una idea en un proyecto estructurado junto a Andrew, un socio estratégico de IA que investiga mercado, competencia y riesgos antes de que el usuario invierta tiempo o dinero en algo sin validar. No es un chat genérico: tiene un método fijo y repetible, memoria por proyecto, y una personalidad que cuestiona en vez de solo responder.",
   stack: ["Next.js 16", "TypeScript", "Tailwind", "Supabase", "Claude API", "Voyage AI"],
+  screenshot: "/screenshots/sc-thorvane.png",
   // TODO: reemplazar con el repositorio público real de Thorvane cuando exista
   // (NO usar el repo interno de SCProject).
   githubUrl: undefined as string | undefined,
