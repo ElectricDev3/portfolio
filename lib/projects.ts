@@ -302,9 +302,9 @@ export interface InProgressProject {
 export const IN_PROGRESS: InProgressProject = {
   name: "JARVIS",
   nameNote: "nombre provisional",
-  tagline: "Asistente operativo personal, en desarrollo activo",
+  tagline: "De chat de texto a un asistente de voz con identidad visual propia",
   description:
-    "JARVIS es el asistente operativo personal de Wili: corre como app de escritorio, con memoria persistente entre conversaciones y un conjunto de reglas de operación fijas que respeta siempre. Está en su fase de MVP de texto — hoy solo tiene acceso a memoria y a la hora; herramientas como archivos, mensajería o internet todavía no están conectadas, y lo dice explícitamente en vez de simular que sí puede usarlas.",
+    "JARVIS es el asistente operativo personal de Wili: corre como app de escritorio, con memoria persistente entre conversaciones y un conjunto de reglas de operación fijas que respeta siempre. Hoy es un MVP de texto — solo tiene acceso a memoria y a la hora, y lo dice explícitamente en vez de simular que puede hacer más. El rediseño ya está definido: control por voz (push-to-talk, sin palabra de activación) y una esfera de cientos de puntos conectados como única interfaz — sin ventana de chat ni texto en pantalla. Todavía no implementado.",
   stack: ["Electron", "React", "TypeScript", "Claude API"],
   screenshot: "/screenshots/jv-jarvis.png",
 };
