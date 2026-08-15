@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
-import { FEATURED } from "@/lib/projects";
+import { ArrowUpRight, Hammer } from "lucide-react";
+import { FEATURED, IN_PROGRESS } from "@/lib/projects";
 import { GitHubIcon } from "./icons";
 
 export function Featured() {
@@ -67,6 +67,53 @@ export function Featured() {
               sizes="(min-width: 1024px) 1000px, 100vw"
               className="object-cover object-top"
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="relative mt-6 overflow-hidden rounded-xl border border-dashed border-[var(--border-hover)] bg-[var(--bg-elevated)] p-6 sm:p-8">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-[1fr_1.2fr] sm:items-center">
+          <div>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--border-hover)] px-2.5 py-1 font-mono-label text-[10px] uppercase text-[var(--text-secondary)]">
+              <Hammer size={11} />
+              En desarrollo
+            </span>
+
+            <h3 className="mt-4 text-xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-2xl">
+              {IN_PROGRESS.name}
+              <span className="ml-2 text-sm font-normal text-[var(--text-muted)]">({IN_PROGRESS.nameNote})</span>
+            </h3>
+            <p className="mt-1 text-sm text-[var(--accent)]">{IN_PROGRESS.tagline}</p>
+            <p className="mt-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+              {IN_PROGRESS.description}
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {IN_PROGRESS.stack.map((tech) => (
+                <span
+                  key={tech}
+                  className="font-mono-label rounded border border-[var(--border)] px-2 py-1 text-[11px] text-[var(--text-secondary)]"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <p className="mt-5 text-xs text-[var(--text-muted)]">
+              Sin demo ni repositorio público todavía — se agregan cuando esté probado y completo.
+            </p>
+          </div>
+
+          <div className="relative overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--bg)] opacity-90">
+            <div className="relative aspect-[16/10] w-full">
+              <Image
+                src={IN_PROGRESS.screenshot}
+                alt={`Captura de ${IN_PROGRESS.name}`}
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover object-top"
+              />
+            </div>
           </div>
         </div>
       </div>

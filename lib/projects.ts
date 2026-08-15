@@ -286,3 +286,25 @@ export const FEATURED = {
   // código real, sin docs internos) — NO es el repo interno de SCProject.
   githubUrl: "https://github.com/ElectricDev3/thorvane" as string | undefined,
 };
+
+export interface InProgressProject {
+  name: string;
+  nameNote: string;
+  tagline: string;
+  description: string;
+  stack: string[];
+  screenshot: string;
+}
+
+// Grado 1 en desarrollo activo — no está en PROJECTS ni tiene el mismo tratamiento
+// que FEATURED porque, a diferencia de esos, todavía no está terminado ni probado.
+// Se muestra con honestidad como "en desarrollo", no como un producto más.
+export const IN_PROGRESS: InProgressProject = {
+  name: "JARVIS",
+  nameNote: "nombre provisional",
+  tagline: "Asistente operativo personal, en desarrollo activo",
+  description:
+    "JARVIS es el asistente operativo personal de Wili: corre como app de escritorio, con memoria persistente entre conversaciones y un conjunto de reglas de operación fijas que respeta siempre. Está en su fase de MVP de texto — hoy solo tiene acceso a memoria y a la hora; herramientas como archivos, mensajería o internet todavía no están conectadas, y lo dice explícitamente en vez de simular que sí puede usarlas.",
+  stack: ["Electron", "React", "TypeScript", "Claude API"],
+  screenshot: "/screenshots/jv-jarvis.png",
+};
