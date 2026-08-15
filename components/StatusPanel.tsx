@@ -1,6 +1,11 @@
 import { PROJECTS } from "@/lib/projects";
 
+const MAX_VISIBLE = 6;
+
 export function StatusPanel() {
+  const visible = PROJECTS.slice(0, MAX_VISIBLE);
+  const remaining = PROJECTS.length - visible.length;
+
   return (
     <div className="w-full rounded-lg border border-[var(--border)] bg-[var(--surface)] shadow-[0_0_0_1px_rgba(255,180,84,0.04)]">
       <div className="flex items-center justify-between border-b border-[var(--border)] px-4 py-2.5">
@@ -18,7 +23,7 @@ export function StatusPanel() {
           <span className="caret text-[var(--accent)]">▍</span>
         </p>
         <div className="mt-3 space-y-1">
-          {PROJECTS.map((project, i) => (
+          {visible.map((project, i) => (
             <div
               key={project.name}
               className="flex items-center justify-between opacity-0"
@@ -31,12 +36,24 @@ export function StatusPanel() {
               <span className="text-[var(--accent)]">OK</span>
             </div>
           ))}
+          {remaining > 0 && (
+            <div
+              className="flex items-center justify-between opacity-0"
+              style={{
+                animation: "fade-in-up 0.4s ease-out forwards",
+                animationDelay: `${0.25 + visible.length * 0.08}s`,
+              }}
+            >
+              <span className="text-[var(--text-muted)]">+{remaining} más</span>
+              <span className="text-[var(--accent)]">OK</span>
+            </div>
+          )}
         </div>
         <div
           className="mt-3 border-t border-[var(--border)] pt-3 text-[var(--text-muted)] opacity-0"
           style={{ animation: "fade-in-up 0.4s ease-out forwards", animationDelay: "1s" }}
         >
-          8/8 shipped · build sin errores
+          {PROJECTS.length}/{PROJECTS.length} shipped · build sin errores
         </div>
       </div>
     </div>

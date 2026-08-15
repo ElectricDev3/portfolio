@@ -10,6 +10,8 @@ export interface Project {
   demoUrl?: string;
   githubUrl?: string;
   accent: string;
+  // Nivel de complejidad/alcance interno del portafolio (nunca se muestra como texto "Grado N" en la UI pública).
+  tier: 2 | 3;
 }
 
 export const PROJECTS: Project[] = [
@@ -27,6 +29,7 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://quorel-phi.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/quorel",
     accent: "#6366F1",
+    tier: 2,
   },
   {
     codename: "IMProject",
@@ -42,6 +45,7 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://stashline.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/stashline",
     accent: "#F59E0B",
+    tier: 2,
   },
   {
     codename: "TMProject",
@@ -51,27 +55,13 @@ export const PROJECTS: Project[] = [
     problem:
       "Repartir el trabajo entre notas sueltas y chats hace que las tareas se pierdan entre proyectos.",
     solution:
-      "Un tablero kanban por proyecto con arrastrar y soltar nativo, prioridades, fechas límite y progreso visible.",
+      "Un tablero kanban por proyecto con arrastrar y soltar nativo, prioridades, fechas límite, y un link de solo lectura para compartir el avance con el cliente sin darle acceso al tablero.",
     stack: ["Next.js", "TypeScript", "Tailwind", "HTML5 Drag & Drop"],
     screenshot: "/screenshots/tm-fluxboard.png",
     demoUrl: "https://fluxboard-eight.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/fluxboard",
     accent: "#10B981",
-  },
-  {
-    codename: "BMProject",
-    portfolioId: "BM2Prf",
-    name: "Marqly",
-    tagline: "Enlaces guardados, organizados y con favicon real",
-    problem:
-      "Los marcadores del navegador no se buscan ni se organizan bien entre dispositivos.",
-    solution:
-      "Un gestor de enlaces independiente con categorías, favoritos y búsqueda, con el ícono real de cada sitio.",
-    stack: ["Next.js", "TypeScript", "Tailwind", "next/image"],
-    screenshot: "/screenshots/bm-marqly.png",
-    demoUrl: "https://marqly-brown.vercel.app",
-    githubUrl: "https://github.com/ElectricDev3/marqly",
-    accent: "#8B5CF6",
+    tier: 2,
   },
   {
     codename: "FBProject",
@@ -87,21 +77,7 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://formora-flax.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/formora",
     accent: "#06B6D4",
-  },
-  {
-    codename: "MDProject",
-    portfolioId: "MD2Prf",
-    name: "Metrixa",
-    tagline: "Dashboard de métricas con gráficas hechas a mano",
-    problem:
-      "Un producto necesita ver sus métricas clave de un vistazo, comparadas contra el período anterior.",
-    solution:
-      "Gráficas de línea y barra en SVG puro (sin librerías de charting), con crosshair, tooltips y paleta validada por accesibilidad de color.",
-    stack: ["Next.js", "TypeScript", "Tailwind", "SVG a mano"],
-    screenshot: "/screenshots/md-metrixa.png",
-    demoUrl: "https://metrixa-beta.vercel.app",
-    githubUrl: "https://github.com/ElectricDev3/metrixa",
-    accent: "#EC4899",
+    tier: 2,
   },
   {
     codename: "MEProject",
@@ -117,6 +93,71 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://scoutlens-mocha.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/scoutlens",
     accent: "#F97316",
+    tier: 2,
+  },
+  {
+    codename: "BKProject",
+    portfolioId: "BK2Prf",
+    name: "Slotwise",
+    tagline: "Reservas y citas sin choques, con link público",
+    problem:
+      "Agendar citas por mensajes de ida y vuelta hace perder tiempo y termina en horarios encimados.",
+    solution:
+      "Página de reservas pública con disponibilidad semanal, cálculo de horarios libres en tiempo real, y una restricción de base de datos que hace literalmente imposible una doble reserva.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Neon Postgres", "JWT"],
+    screenshot: "/screenshots/bk-slotwise.png",
+    demoUrl: "https://slotwise-beta.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/slotwise",
+    accent: "#3B82F6",
+    tier: 2,
+  },
+  {
+    codename: "HDProject",
+    portfolioId: "HD2Prf",
+    name: "Deskly",
+    tagline: "Mesa de ayuda con tickets, sin cuenta para el cliente",
+    problem:
+      "Atender soporte por correo o WhatsApp desordena las conversaciones y no deja rastro claro del estado de cada caso.",
+    solution:
+      "Los clientes abren tickets y les dan seguimiento con un código y su correo, sin crear cuenta; el negocio responde desde un panel con estado y prioridad.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Neon Postgres", "JWT"],
+    screenshot: "/screenshots/hd-deskly.png",
+    demoUrl: "https://deskly-amber.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/deskly",
+    accent: "#EF4444",
+    tier: 2,
+  },
+  {
+    codename: "EXProject",
+    portfolioId: "EX2Prf",
+    name: "Ledgerly",
+    tagline: "Gastos de freelancer, categorizados y exportables",
+    problem:
+      "Llevar los gastos del negocio en notas sueltas hace que armar la declaración o una factura sea un dolor de cabeza.",
+    solution:
+      "Registro de gastos por categoría y cliente, desglose visual del período, y exportación a CSV lista para el contador.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/ex-ledgerly.png",
+    demoUrl: "https://ledgerly-iota-ten.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/ledgerly",
+    accent: "#84CC16",
+    tier: 2,
+  },
+  {
+    codename: "BMProject",
+    portfolioId: "BM2Prf",
+    name: "Marqly",
+    tagline: "Enlaces guardados, organizados y con favicon real",
+    problem:
+      "Los marcadores del navegador no se buscan ni se organizan bien entre dispositivos.",
+    solution:
+      "Un gestor de enlaces independiente con categorías, favoritos y búsqueda, con el ícono real de cada sitio.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "next/image"],
+    screenshot: "/screenshots/bm-marqly.png",
+    demoUrl: "https://marqly-brown.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/marqly",
+    accent: "#8B5CF6",
+    tier: 3,
   },
   {
     codename: "TAProject",
@@ -132,6 +173,103 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://lexmind-nu.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/lexmind",
     accent: "#14B8A6",
+    tier: 3,
+  },
+  {
+    codename: "MDProject",
+    portfolioId: "MD2Prf",
+    name: "Metrixa",
+    tagline: "Convierte cualquier CSV en gráficas, en segundos",
+    problem:
+      "Un CSV con datos reales normalmente termina pegado en una hoja de cálculo solo para hacer una gráfica rápida.",
+    solution:
+      "Pega o sube un CSV, elige las columnas, y obtén una gráfica de línea o barra en SVG — sin datos de ejemplo falsos, solo tus datos reales.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "SVG a mano"],
+    screenshot: "/screenshots/md-metrixa.png",
+    demoUrl: "https://metrixa-beta.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/metrixa",
+    accent: "#EC4899",
+    tier: 3,
+  },
+  {
+    codename: "CPProject",
+    portfolioId: "CP2Prf",
+    name: "Huemap",
+    tagline: "Paletas de color validadas para accesibilidad real",
+    problem:
+      "Elegir colores 'a ojo' suele producir paletas que fallan en contraste o que dos personas con daltonismo no logran distinguir.",
+    solution:
+      "Genera o valida paletas calculando contraste WCAG y separación de color bajo simulación de daltonismo, no adivinando.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "OKLab/OKLCH a mano"],
+    screenshot: "/screenshots/cp-huemap.png",
+    demoUrl: "https://huemap-five.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/huemap",
+    accent: "#D946EF",
+    tier: 3,
+  },
+  {
+    codename: "RXProject",
+    portfolioId: "RX2Prf",
+    name: "Patternly",
+    tagline: "Playground de regex con explicación en español",
+    problem:
+      "Escribir una expresión regular a ciegas y solo descubrir el error cuando falla en producción es un mal momento para aprender.",
+    solution:
+      "Resalta las coincidencias en vivo, lista los grupos capturados, y explica cada parte del patrón en español, carácter por carácter.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/rx-patternly.png",
+    demoUrl: "https://patternly-smoky.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/patternly",
+    accent: "#0EA5E9",
+    tier: 3,
+  },
+  {
+    codename: "JTProject",
+    portfolioId: "JT2Prf",
+    name: "Jsonly",
+    tagline: "Formatea, valida y compara JSON sin salir del navegador",
+    problem:
+      "Un JSON mal formado solo dice 'Unexpected token' sin decir dónde, y comparar dos versiones a mano es lento.",
+    solution:
+      "Valida con línea y columna exacta del error, muestra el JSON como árbol navegable, y compara dos versiones línea por línea.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/jt-jsonly.png",
+    demoUrl: "https://jsonly-pink.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/jsonly",
+    accent: "#F43F5E",
+    tier: 3,
+  },
+  {
+    codename: "MKProject",
+    portfolioId: "MK2Prf",
+    name: "Inkline",
+    tagline: "Editor de Markdown con vista previa y exportación real",
+    problem:
+      "Escribir en Markdown sin ver el resultado final invita a errores de formato que solo se notan al publicar.",
+    solution:
+      "Vista previa en vivo con resaltado de código, y exportación a HTML o PDF vía el motor de impresión del navegador, con el HTML sanitizado contra scripts maliciosos.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "marked", "DOMPurify"],
+    screenshot: "/screenshots/mk-inkline.png",
+    demoUrl: "https://inkline-steel.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/inkline",
+    accent: "#A855F7",
+    tier: 3,
+  },
+  {
+    codename: "ICProject",
+    portfolioId: "IC2Prf",
+    name: "Squeezr",
+    tagline: "Comprime y convierte imágenes sin subirlas a ningún lado",
+    problem:
+      "Comprimir imágenes antes de subirlas a un sitio normalmente implica pasarlas por una herramienta en línea, cediendo el archivo a un tercero.",
+    solution:
+      "Arrastra tus imágenes, ajusta calidad y formato, y descarga — todo el procesamiento ocurre en tu navegador vía Canvas, sin backend.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Canvas API"],
+    screenshot: "/screenshots/ic-squeezr.png",
+    demoUrl: "https://squeezr-gamma.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/squeezr",
+    accent: "#EAB308",
+    tier: 3,
   },
 ];
 
