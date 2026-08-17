@@ -138,7 +138,7 @@ export const PROJECTS: Project[] = [
       "Registro de gastos por categoría y cliente, desglose visual del período, y exportación a CSV lista para el contador.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     screenshot: "/screenshots/ex-ledgerly.png",
-    demoUrl: "https://ledgerly-iota-ten.vercel.app",
+    demoUrl: "https://ledgerly-scstudios.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/ledgerly",
     accent: "#84CC16",
     tier: 2,
@@ -269,6 +269,22 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://squeezr-gamma.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/squeezr",
     accent: "#EAB308",
+    tier: 3,
+  },
+  {
+    codename: "IFProject",
+    portfolioId: "IF3Prf",
+    name: "Iconforge",
+    tagline: "Sube una imagen, descarga todos los tamaños de ícono que necesitas",
+    problem:
+      "Generar favicons y app icons a mano en cada tamaño estándar (16, 32, 48, 180, 192, 512, .ico) es repetitivo y fácil de dejar incompleto.",
+    solution:
+      "Sube una imagen, recórtala a cuadrado, y descarga un ZIP con los 6 tamaños PNG reales, un favicon.ico multi-resolución armado a mano, y el snippet de HTML listo para pegar — todo procesado en tu navegador vía Canvas, sin backend.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Canvas API", "JSZip"],
+    screenshot: "/screenshots/if-iconforge.png",
+    demoUrl: "https://iconforge-eight.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/iconforge",
+    accent: "#C2410C",
     tier: 3,
   },
 ];
