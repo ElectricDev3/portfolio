@@ -96,6 +96,22 @@ export const PROJECTS: Project[] = [
     tier: 2,
   },
   {
+    codename: "RNProject",
+    portfolioId: "RN2Prf",
+    name: "Renewly",
+    tagline: "Sabe quién está por vencer antes de que se te vaya",
+    problem:
+      "Sin un sistema real, un negocio de servicio recurrente descubre que un miembro no renovó cuando ya se fue, no antes.",
+    solution:
+      "Registra miembros con su plan y fecha de renovación; calcula en tiempo real quién está por vencer o ya venció, con ingreso recurrente estimado y una lista priorizada por urgencia real, no por orden de captura.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/rn-renewly.png",
+    demoUrl: "https://renewly-sigma.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/renewly",
+    accent: "#0891B2",
+    tier: 2,
+  },
+  {
     codename: "BKProject",
     portfolioId: "BK2Prf",
     name: "Slotwise",
