@@ -128,6 +128,22 @@ export const PROJECTS: Project[] = [
     tier: 2,
   },
   {
+    codename: "GFProject",
+    portfolioId: "GF2Prf",
+    name: "Guestflow",
+    tagline: "Cada invitado, confirmado",
+    problem:
+      "Confirmar asistencia a un evento por chat o llamada dispersa las respuestas y nadie sabe el conteo real hasta el último momento.",
+    solution:
+      "Crea un evento y comparte un solo link público — los invitados confirman sin cuenta (sí/no/tal vez, acompañantes, notas dietéticas) y el conteo llega en vivo al panel del anfitrión.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Neon Postgres", "JWT"],
+    screenshot: "/screenshots/gf-guestflow.png",
+    demoUrl: "https://guestflow-pi.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/guestflow",
+    accent: "#B45309",
+    tier: 2,
+  },
+  {
     codename: "HDProject",
     portfolioId: "HD2Prf",
     name: "Deskly",
