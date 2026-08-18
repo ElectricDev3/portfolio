@@ -447,6 +447,22 @@ export const PROJECTS: Project[] = [
     accent: "#0F766E",
     tier: 3,
   },
+  {
+    codename: "PLProject",
+    portfolioId: "PL2Prf",
+    name: "Punchly",
+    tagline: "Tarjetas de lealtad digitales, con sellos y QR real",
+    problem:
+      "Las tarjetas de lealtad de papel se pierden o se olvidan, y armar un programa de sellos digital normalmente exige contratar una plataforma completa.",
+    solution:
+      "Programas de sellos con detección real de tarjeta completa, canje con historial, y un código QR real (no decorativo) por tarjeta para escanear en caja.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "qrcode", "BarcodeDetector API"],
+    screenshot: "/screenshots/pl-punchly.png",
+    demoUrl: "https://punchly-xi.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/punchly",
+    accent: "#92400E",
+    tier: 2,
+  },
 ];
 
 export const FEATURED = {
