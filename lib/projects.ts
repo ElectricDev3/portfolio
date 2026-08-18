@@ -288,6 +288,22 @@ export const PROJECTS: Project[] = [
     tier: 3,
   },
   {
+    codename: "QRProject",
+    portfolioId: "QR3Prf",
+    name: "Qrafted",
+    tagline: "Códigos QR reales, con estilo propio",
+    problem:
+      "La mayoría de los generadores de QR gratuitos producen un código genérico en blanco y negro, sin control real del diseño ni exportación de calidad.",
+    solution:
+      "Codifica URL, texto, WiFi o una tarjeta de contacto con el mismo algoritmo de corrección de errores que usa cualquier lector comercial, y aplica color y forma de esquina antes de exportar en SVG o PNG.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "qrcode"],
+    screenshot: "/screenshots/qr-qrafted.png",
+    demoUrl: "https://qrafted-zeta.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/qrafted",
+    accent: "#4338CA",
+    tier: 3,
+  },
+  {
     codename: "IFProject",
     portfolioId: "IF3Prf",
     name: "Iconforge",
