@@ -128,6 +128,22 @@ export const PROJECTS: Project[] = [
     tier: 2,
   },
   {
+    codename: "CSProject",
+    portfolioId: "CS2Prf",
+    name: "Costora",
+    tagline: "Sabe cuánto te cuesta cada platillo antes de venderlo",
+    problem:
+      "Sin costear cada receta a detalle, un negocio de comida no sabe si un platillo popular en realidad le está dejando margen o casi no gana nada.",
+    solution:
+      "Registra ingredientes con su costo real, arma recetas combinándolos, y calcula al instante el costo por porción, el margen real, y un precio sugerido para el margen que quieras — todo ordenado por rentabilidad.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/cs-costora.png",
+    demoUrl: "https://costora-delta.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/costora",
+    accent: "#EA580C",
+    tier: 2,
+  },
+  {
     codename: "GFProject",
     portfolioId: "GF2Prf",
     name: "Guestflow",
