@@ -463,6 +463,22 @@ export const PROJECTS: Project[] = [
     accent: "#92400E",
     tier: 2,
   },
+  {
+    codename: "CNProject",
+    portfolioId: "CN3Prf",
+    name: "Cronscribe",
+    tagline: "Construye y traduce expresiones cron, sin adivinar",
+    problem:
+      "Una expresión cron mal formada suele fallar en silencio o dar un error genérico, y calcular a mano cuándo va a correr de verdad es fácil de arruinar.",
+    solution:
+      "Armá una expresión con controles visuales por campo o traducí una existente a español, con validación por campo y las próximas ejecuciones reales calculadas con un motor propio (sin librería externa).",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/cn-cronscribe.png",
+    demoUrl: "https://cronscribe.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/cronscribe",
+    accent: "#334155",
+    tier: 3,
+  },
 ];
 
 export const FEATURED = {
