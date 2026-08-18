@@ -205,7 +205,7 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://marqly-brown.vercel.app",
     githubUrl: "https://github.com/ElectricDev3/marqly",
     accent: "#8B5CF6",
-    tier: 3,
+    tier: 2,
   },
   {
     codename: "TAProject",
