@@ -479,6 +479,22 @@ export const PROJECTS: Project[] = [
     accent: "#334155",
     tier: 3,
   },
+  {
+    codename: "DFProject",
+    portfolioId: "DF3Prf",
+    name: "Diffora",
+    tagline: "Comparador de texto y código con diff real, línea por línea",
+    problem:
+      "Comparar dos versiones de un texto o de código a simple vista es lento y poco confiable — es fácil pasar por alto un cambio de una palabra escondido en una línea larga.",
+    solution:
+      "Diff línea por línea con el algoritmo de Myers real, resaltado a nivel de palabra dentro de cada línea modificada, vistas lado a lado y unificada intercambiables, estadísticas exactas y exportación a un unified diff estándar copiable con un click.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "diff (jsdiff)"],
+    screenshot: "/screenshots/df-diffora.png",
+    demoUrl: "https://diffora.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/diffora",
+    accent: "#F5A623",
+    tier: 3,
+  },
 ];
 
 export const FEATURED = {
