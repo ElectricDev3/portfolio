@@ -399,6 +399,38 @@ export const PROJECTS: Project[] = [
     accent: "#DC2626",
     tier: 3,
   },
+  {
+    codename: "LFProject",
+    portfolioId: "LF2Prf",
+    name: "Lineflow",
+    tagline: "Fila de espera digital para negocios sin cita",
+    problem:
+      "Un negocio sin sistema de citas (una barbería, un taller, un trámite) termina gestionando la fila a mano, y el cliente no tiene forma de saber cuánto falta sin preguntar.",
+    solution:
+      "Panel para el negocio que agrega/llama a la fila con un clic, y dos vistas públicas sin cuenta ni app: una pantalla de sala de espera y un turno personal por código, ambas actualizándose solas en vivo.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Neon Postgres"],
+    screenshot: "/screenshots/lf-lineflow.png",
+    demoUrl: "https://lineflow-pi.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/lineflow",
+    accent: "#DB2777",
+    tier: 2,
+  },
+  {
+    codename: "MVProject",
+    portfolioId: "MV2Prf",
+    name: "Menuvo",
+    tagline: "Menú digital con QR, sin base de datos",
+    problem:
+      "Un restaurante que quiere un menú digital con QR normalmente termina dependiendo de una plataforma externa solo para publicar una carta que casi nunca cambia.",
+    solution:
+      "Armás el menú en un editor simple y al publicar se genera un link y un código QR reales — el menú entero viaja codificado en la propia URL, sin backend ni base de datos.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "lz-string", "qrcode.react"],
+    screenshot: "/screenshots/mv-menuvo.png",
+    demoUrl: "https://menuvo-three.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/menuvo",
+    accent: "#7C2D12",
+    tier: 2,
+  },
 ];
 
 export const FEATURED = {
