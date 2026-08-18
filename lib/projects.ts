@@ -431,6 +431,22 @@ export const PROJECTS: Project[] = [
     accent: "#7C2D12",
     tier: 2,
   },
+  {
+    codename: "CVProject",
+    portfolioId: "CV3Prf",
+    name: "Convero",
+    tagline: "Conversor de unidades, con pivote y magnitud a la vista",
+    problem:
+      "Convertir unidades a mano obliga a buscar la fórmula, y la mayoría de los conversores muestran un número sin ninguna noción de qué tan grande o pequeño es realmente.",
+    solution:
+      "Longitud, peso, volumen, temperatura, área, velocidad y datos, todo recalculado en vivo desde un solo campo editable — tocar cualquier resultado lo vuelve la nueva unidad de origen, con un riel de magnitud junto a cada valor.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/cv-convero.png",
+    demoUrl: "https://convero-psi.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/convero",
+    accent: "#0F766E",
+    tier: 3,
+  },
 ];
 
 export const FEATURED = {
