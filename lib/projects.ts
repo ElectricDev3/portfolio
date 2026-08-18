@@ -352,6 +352,22 @@ export const PROJECTS: Project[] = [
     tier: 3,
   },
   {
+    codename: "ENProject",
+    portfolioId: "EN3Prf",
+    name: "Encodex",
+    tagline: "Base64, URL, hex y hashes — todo en tu navegador",
+    problem:
+      "Codificar/decodificar Base64 o sacar un hash rápido de un texto normalmente implica abrir una consola o pegar el dato en un sitio de terceros.",
+    solution:
+      "Cuatro módulos — Base64, URL, hex y hashes (SHA-1/SHA-256 vía Web Crypto nativo) — con codificación y decodificación en tiempo real, 100% en el navegador, sin backend.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Web Crypto API"],
+    screenshot: "/screenshots/en-encodex.png",
+    demoUrl: "https://encodex-teal.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/encodex",
+    accent: "#1D4ED8",
+    tier: 3,
+  },
+  {
     codename: "IFProject",
     portfolioId: "IF3Prf",
     name: "Iconforge",
