@@ -83,9 +83,9 @@ export const PROJECTS: Project[] = [
     codename: "MEProject",
     portfolioId: "ME2Prf",
     name: "Scoutlens",
-    tagline: "Explorador de mercado con datos reales de la App Store",
+    tagline: "Comparador táctico de apps del App Store, no investigación de mercado",
     problem:
-      "Antes de construir un producto conviene saber qué competidores ya existen, a qué precio y qué tan bien calificados están.",
+      "Ya sabés qué app vas a construir; lo que falta es ver quién más está resolviendo lo mismo en el App Store y cómo se compara en precio, calificación y reseñas.",
     solution:
       "Búsqueda en vivo contra la iTunes Search API vía un proxy propio, con filtros y comparación lado a lado de hasta 3 apps.",
     stack: ["Next.js", "TypeScript", "Tailwind", "Route Handlers", "iTunes Search API"],
@@ -179,11 +179,11 @@ export const PROJECTS: Project[] = [
     codename: "EXProject",
     portfolioId: "EX2Prf",
     name: "Ledgerly",
-    tagline: "Gastos de freelancer, categorizados y exportables",
+    tagline: "Gastos de un freelancer individual, categorizados y exportables",
     problem:
-      "Llevar los gastos del negocio en notas sueltas hace que armar la declaración o una factura sea un dolor de cabeza.",
+      "Un freelancer que lleva sus propios gastos en notas sueltas no necesita un sistema contable de equipo, solo registrar, categorizar y exportar rápido para el contador.",
     solution:
-      "Registro de gastos por categoría y cliente, desglose visual del período, y exportación a CSV lista para el contador.",
+      "Registro de gastos por categoría y cliente en el propio navegador (sin cuentas ni sincronización entre dispositivos, a propósito), con desglose visual del período y exportación a CSV.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     screenshot: "/screenshots/ex-ledgerly.png",
     demoUrl: "https://ledgerly-scstudios.vercel.app",
@@ -225,13 +225,13 @@ export const PROJECTS: Project[] = [
   },
   {
     codename: "MDProject",
-    portfolioId: "MD2Prf",
+    portfolioId: "MD3Prf",
     name: "Metrixa",
     tagline: "Convierte cualquier CSV en gráficas, en segundos",
     problem:
-      "Un CSV con datos reales normalmente termina pegado en una hoja de cálculo solo para hacer una gráfica rápida.",
+      "Tenés datos en CSV — un reporte, un export de cualquier sistema — y solo querés verlos graficados, sin abrir Excel ni subir el archivo a un servidor ajeno.",
     solution:
-      "Pega o sube un CSV, elige las columnas, y obtén una gráfica de línea o barra en SVG — sin datos de ejemplo falsos, solo tus datos reales.",
+      "Pegá o subí un CSV, elegí las columnas, y obtené una gráfica de línea o barra accesible en el momento — deliberadamente genérica, sin backend, sin atarse a ninguna vertical o negocio en particular.",
     stack: ["Next.js", "TypeScript", "Tailwind", "SVG a mano"],
     screenshot: "/screenshots/md-metrixa.png",
     demoUrl: "https://metrixa-beta.vercel.app",
