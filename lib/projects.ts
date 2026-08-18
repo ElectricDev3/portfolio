@@ -383,6 +383,22 @@ export const PROJECTS: Project[] = [
     accent: "#C2410C",
     tier: 3,
   },
+  {
+    codename: "PFProject",
+    portfolioId: "PF3Prf",
+    name: "Passforge",
+    tagline: "Contraseñas forjadas, no adivinadas",
+    problem:
+      "La mayoría de los generadores de contraseñas muestran una barra de 'fortaleza' inventada a ojo, sin ningún cálculo real detrás.",
+    solution:
+      "Genera contraseñas o passphrases con crypto.getRandomValues (criptográficamente seguro, nunca Math.random) y calcula la entropía real en bits, con tiempo de crackeo estimado a la vista — no una barra de colores puesta a ojo.",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Web Crypto API"],
+    screenshot: "/screenshots/pf-passforge.png",
+    demoUrl: "https://passforge-lime.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/passforge",
+    accent: "#DC2626",
+    tier: 3,
+  },
 ];
 
 export const FEATURED = {
