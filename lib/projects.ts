@@ -320,6 +320,22 @@ export const PROJECTS: Project[] = [
     tier: 3,
   },
   {
+    codename: "EPProject",
+    portfolioId: "EP3Prf",
+    name: "Epochly",
+    tagline: "Convierte timestamps y zonas horarias, al instante",
+    problem:
+      "Depurar un timestamp Unix o comparar una hora entre zonas horarias normalmente significa abrir una calculadora aparte y hacer la cuenta a mano.",
+    solution:
+      "Pega un timestamp (detecta segundos o milisegundos) o elige una fecha, y ve la conversión en vivo a ISO 8601, RFC 2822 y varias zonas horarias a la vez — con Intl.DateTimeFormat nativo, sin backend.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    screenshot: "/screenshots/ep-epochly.png",
+    demoUrl: "https://epochly-pi.vercel.app",
+    githubUrl: "https://github.com/ElectricDev3/epochly",
+    accent: "#D97706",
+    tier: 3,
+  },
+  {
     codename: "QRProject",
     portfolioId: "QR3Prf",
     name: "Qrafted",
