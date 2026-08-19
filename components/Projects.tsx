@@ -12,7 +12,7 @@ export function Projects() {
         <p className="font-mono-label text-xs text-[var(--text-muted)]">{PROJECTS.length} shipped</p>
       </div>
       <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-3xl">
-        Ocho micro-SaaS, ocho habilidades distintas
+        Quince micro-SaaS, quince problemas reales
       </h2>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
         Cada uno resuelve un problema real, con un stack elegido a propósito y una interfaz pensada
@@ -28,7 +28,7 @@ export function Projects() {
       <div className="mt-20">
         <p className="font-mono-label text-xs uppercase text-[var(--accent)]">Utilidades</p>
         <h3 className="mt-3 text-xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-2xl">
-          Ocho herramientas rápidas, sin fricción
+          Quince herramientas rápidas, sin fricción
         </h3>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--text-secondary)]">
           Más ligeras y enfocadas en una sola tarea — la mayoría corre 100% en el navegador — pero con

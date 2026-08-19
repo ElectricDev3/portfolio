@@ -6,12 +6,14 @@ import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
+import { StatsStrip } from "@/components/StatsStrip";
 
 export default function Home() {
   return (
     <>
       <Nav />
       <Hero />
+      <StatsStrip />
       <About />
       <Featured />
       <Projects />
